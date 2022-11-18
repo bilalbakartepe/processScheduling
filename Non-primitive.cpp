@@ -37,7 +37,7 @@ void insertion(Process p)
 		else {
 			JOBQUE* tmp2 = head;
 
-			while (tmp->process.arrivalTime > tmp2->process.arrivalTime) {
+			while ((tmp->process.arrivalTime > tmp2->process.arrivalTime)&&(tmp2->next!=NULL)) {
 
 				tmp2 = tmp2->next;
 			}
@@ -143,6 +143,9 @@ void executeProcess() {
 
 int main() {
 
+	/*head->processId = p[0];
+	head->burstTime = p[1];
+	head->arrivalTime = p[2]*/
 
 	const int size = 10;
 	Process processArray[] = {
