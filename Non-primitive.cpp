@@ -143,17 +143,14 @@ void executeProcess() {
 
 int main() {
 
-	/*head->processId = p[0];
-	head->burstTime = p[1];
-	head->arrivalTime = p[2]*/
 
 	const int size = 10;
 	Process processArray[] = {
-		{ 1,5000,6 },
-		{ 2,2000,5},
-		{ 3,8000,1 },
-		{ 4,3000,0},
-		{ 5,4000,4}
+		{ 1,6,2 },
+		{ 2,2,5},
+		{ 3,8,1 },
+		{ 4,3,0},
+		{ 5,4,4}
 	};
 
 	std::cout << "Not sorted que is ..:";
